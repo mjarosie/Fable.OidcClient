@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <PackageId>Fable.OidcClient</PackageId>
+    <Version>1.0.2</Version>
+    <Authors>Maciej Jarosiewicz</Authors>
+    <PackageDescription>Fable binding for oidc-client javascript library</PackageDescription>
+    <PackageTags>fsharp;fable;oidc;oidc-client;openid-connect</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/mjarosie/Fable.OidcClient</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Fable.OidcClient.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Fable.Core" Version="3.1.5" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="*.fsproj; *.fs; *.js" PackagePath="fable\" />
+  </ItemGroup>
+</Project>
