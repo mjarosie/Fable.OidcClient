@@ -2,6 +2,20 @@
 
 Library to provide OpenID Connect (OIDC) and OAuth2 protocol support for client applications written in F#. It's a Fable binding for [oidc-client](https://github.com/IdentityModel/oidc-client-js) javascript library.
 
+# How to start using this package
+
+In a directory where your project's `.fsproj` file is:
+
+```
+dotnet add package Fable.OidcClient
+```
+
+In a directory where your project's `package.json` is:
+
+```
+npm install oidc-client 
+```
+
 # Example use
 
 For example based on IdentityServer "[Adding a JavaScript client](https://identityserver4.readthedocs.io/en/latest/quickstarts/4_javascript_client.html#add-your-html-and-javascript-files)" tutorial see [FableBrowserClientOpenIdConnect](https://github.com/mjarosie/FableBrowserClientOpenIdConnect) repository.
