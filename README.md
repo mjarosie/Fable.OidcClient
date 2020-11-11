@@ -16,9 +16,12 @@ In a directory where your project's `package.json` is:
 npm install oidc-client 
 ```
 
-# Example use
+# Examples
 
-For example based on IdentityServer "[Adding a JavaScript client](https://identityserver4.readthedocs.io/en/latest/quickstarts/4_javascript_client.html#add-your-html-and-javascript-files)" tutorial see [FableBrowserClientOpenIdConnect](https://github.com/mjarosie/FableBrowserClientOpenIdConnect) repository.
+Repositories showing examples of using `Fable.OidcClient` with:
+
+- Fable application: [FableBrowserClientOpenIdConnect](https://github.com/mjarosie/FableBrowserClientOpenIdConnect) (based on IdentityServer "[Adding a JavaScript client](https://identityserver4.readthedocs.io/en/latest/quickstarts/4_javascript_client.html#add-your-html-and-javascript-files)" tutorial)
+- Elmish single page application: [ElmishSpaOpenIdConnect](https://github.com/mjarosie/ElmishSpaOpenIdConnect)
 
 ## Initialise the User Manager
 
@@ -41,7 +44,11 @@ let settings: UserManagerSettings =
 
 let mgr: UserManager = Oidc.UserManager.Create settings
 
-// ...
+// From here you can call
+// mgr.signinRedirect() to redirect to login page,
+// mgr.signoutRedirect() to redirect to logout page,
+// mgr.getUser() to retrieve user's details,
+// etc...
 ```
 
 ## Handle the OpenId Connect redirect protocol
